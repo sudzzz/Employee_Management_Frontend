@@ -1,0 +1,41 @@
+<div mat-dialog-title>
+    <h1>View Employee Data</h1>
+</div>
+<div mat-dialog-content>
+      <table>
+        <thead>
+            <tr>
+                <th colspan="2">
+                    Employee Details
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First Name</td>
+                <td>{{firstName}}</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>{{lastName}}</td>
+            </tr>
+            <tr>
+                <td>Designation</td>
+                <td>{{designation}}</td>
+            </tr>
+            <tr>
+                <td>Project</td>
+                <td>{{project}}</td>
+            </tr>
+            <tr>
+                <td>Reporting Manager</td>
+                <td>{{reportingManager}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button [mat-dialog-close]="false" color="primary">Ok</button>
+</div>
